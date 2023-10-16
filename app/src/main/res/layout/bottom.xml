@@ -7,82 +7,102 @@
 
     <LinearLayout
         android:id="@+id/LinearLayout2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_mapmode" />
+            app:srcCompat="@android:drawable/ic_menu_mapmode"
+            android:clickable="false" />
 
         <TextView
             android:id="@+id/textView22"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:saveEnabled="false"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LinearLayout4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
             app:srcCompat="@android:drawable/ic_menu_edit" />
 
         <TextView
             android:id="@+id/textView44"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="联系人" />
+            android:text="联系人"
+            android:layout_gravity="center"
+            android:saveEnabled="false"
+            android:textSize="15sp"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LinearLayout1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="vertical"
         android:weightSum="1">
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
             app:srcCompat="@android:drawable/ic_menu_call" />
 
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:saveEnabled="false"
+            android:textSize="15sp"
             android:text="TextView" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LinearLayout3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:clickable="false"
             android:layout_height="wrap_content"
             app:srcCompat="@android:drawable/ic_menu_compass" />
 
         <TextView
             android:id="@+id/textView33"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:saveEnabled="false"
+            android:textSize="15sp"
             android:text="设置" />
     </LinearLayout>
 </LinearLayout>

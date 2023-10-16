@@ -35,8 +35,8 @@ public class recycleactivity extends AppCompatActivity {
 
         context = this;
 
-        //Myadapter adapter = new Myadapter();
-        //recyclerView.setAdapter(adapter);
+//        Myadapter adapter = new Myadapter();
+//        recyclerView.setAdapter(adapter);
 
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setOrientation(RecyclerView.VERTICAL);

@@ -10,10 +10,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     FragmentManager fm;
-    Fragment fragment1, fragment2, fragment3, fragment4;
     LinearLayout linearLayout1, linearLayout2,linearLayout3,linearLayout4;
+
+    Fragment fragment1 = new Fragment1();
+    Fragment fragment2 = new Fragment2();
+    Fragment fragment3 = new Fragment3();
+    Fragment fragment4 = new Fragment4();
+
+
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -21,16 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragment1 = new Fragment1();
-        fragment2 = new Fragment2();
-        fragment3 = new Fragment3();
-        fragment4 = new Fragment4();
-
         linearLayout1=findViewById(R.id.LinearLayout1);
         linearLayout2=findViewById(R.id.LinearLayout2);
         linearLayout3=findViewById(R.id.LinearLayout3);
         linearLayout4=findViewById(R.id.LinearLayout4);
-
 
         fm = getSupportFragmentManager();
 
@@ -42,11 +44,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout2.setOnClickListener(this);
         linearLayout3.setOnClickListener(this);
         linearLayout4.setOnClickListener(this);
-//        FragmentTransaction ft = fm.beginTransaction()
-//                .add(R.id.content,fragment1)
-//                .add(R.id.content,fragment2)
-//                .add(R.id.content,fragment3)
-//                .add(R.id.content,fragment4);
 
     }
 
