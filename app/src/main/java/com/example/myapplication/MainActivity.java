@@ -14,11 +14,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     FragmentManager fm;
     LinearLayout linearLayout1, linearLayout2,linearLayout3,linearLayout4;
-
-    Fragment fragment1 = new Fragment1();
-    Fragment fragment2 = new Fragment2();
-    Fragment fragment3 = new Fragment3();
-    Fragment fragment4 = new Fragment4();
+    Fragment fragment1,fragment2,fragment3,fragment4;
 
 
 
@@ -28,6 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        fragment1 = new Fragment1();
+        fragment2 = new Fragment2();
+        fragment3 = new Fragment3();
+        fragment4 = new Fragment4();
+
 
         linearLayout1=findViewById(R.id.LinearLayout1);
         linearLayout2=findViewById(R.id.LinearLayout2);
@@ -67,17 +69,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View view){
         fragmenthide();
-        int id = view.getId();
-        if (id == R.id.LinearLayout1){
+        if (view.getId()==R.id.LinearLayout1){
             fragmentshow(fragment1);
-        }
-        if (id == R.id.LinearLayout2){
+        }else if (view.getId()==R.id.LinearLayout2){
             fragmentshow(fragment2);
-        }
-        if (id == R.id.LinearLayout3){
+        }else if (view.getId()==R.id.LinearLayout3){
             fragmentshow(fragment3);
-        }
-        if (id == R.id.LinearLayout4){
+        }else if(view.getId()==R.id.LinearLayout4){
             fragmentshow(fragment4);
         }
 

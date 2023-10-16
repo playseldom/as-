@@ -24,9 +24,9 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_gravity="center"
             android:saveEnabled="false"
+            android:text="微信"
             android:textSize="15sp" />
     </LinearLayout>
 
@@ -77,8 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:saveEnabled="false"
-            android:textSize="15sp"
-            android:text="TextView" />
+            android:text="发现"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
